@@ -2,30 +2,28 @@ package adapter;
 
 /**
  * 对象适配器
- *
- * @author zhihaoyu
  */
 public class ObjectAdapter implements Target {
 
     /**
-     * 适配者
+     * 原始接口对象
      */
-    private Adaptee adaptee;
+    private Origin origin;
 
     /**
      * 构造器
      *
-     * @param adaptee 适配者
+     * @param origin 原始接口对象
      */
-    public ObjectAdapter(Adaptee adaptee) {
-        this.adaptee = adaptee;
+    public ObjectAdapter(Origin origin) {
+        this.origin = origin;
     }
 
     /**
-     * 请求
+     * 实现了的目标方法
      */
     @Override
-    public void request() {
-        adaptee.specificRequest();
+    public void target() {
+        origin.origin();
     }
 }

@@ -2,16 +2,14 @@ package adapter;
 
 /**
  * 类适配器
- *
- * @author zhihaoyu
  */
-public class ClassAdapter extends Adaptee implements Target {
+public class ClassAdapter extends Origin implements Target {
 
     /**
-     * 请求
+     * 实现了的目标方法
      */
     @Override
-    public void request() {
-        specificRequest();
+    public void target() {
+        origin();
     }
 }
