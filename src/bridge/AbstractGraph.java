@@ -4,7 +4,7 @@ import bridge.color.Color;
 import bridge.shape.Shape;
 
 /**
- * 图形抽象
+ * 抽象图形
  */
 public abstract class AbstractGraph {
 
