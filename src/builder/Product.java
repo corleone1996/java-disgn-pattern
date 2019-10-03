@@ -2,45 +2,29 @@ package builder;
 
 /**
  * 产品
- *
- * @author zhihaoyu
  */
 public class Product {
 
     /**
-     * 部分一
+     * 零件1
      */
-    private String partOne;
+    private String part1;
     /**
-     * 部分二
+     * 零件2
      */
-    private String partTwo;
-    /**
-     * 部分三
-     */
-    private String partThree;
+    private String part2;
 
-    public void setPartOne(String partOne) {
-        this.partOne = partOne;
+    public void setPart1(String part1) {
+        this.part1 = part1;
     }
 
-    public void setPartTwo(String partTwo) {
-        this.partTwo = partTwo;
-    }
-
-    public void setPartThree(String partThree) {
-        this.partThree = partThree;
-    }
-
-    public void use() {
-        System.out.println("使用该产品的功能");
+    public void setPart2(String part2) {
+        this.part2 = part2;
     }
 
     @Override
     public String toString() {
-        return "The part one is: " + partOne +
-                ", the part two is: " + partTwo +
-                ", the part three is: " + partThree
-                + ".";
+        return "零件1：" + part1 +
+                "，零件2：" + part2;
     }
 }
