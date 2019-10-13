@@ -1,14 +1,12 @@
 package commad;
 
 /**
- * 抽象命令
- *
- * @author zhihaoyu
+ * 命令接口
  */
 public interface Command {
 
     /**
-     * 执行命令
+     * 执行
      */
     void execute();
 }
